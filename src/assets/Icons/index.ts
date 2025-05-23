@@ -1,1 +1,4 @@
-export { default as RightArrowIcon } from './right-arrow.svg';
+export { default as FacebookIcon } from './facebook.svg';
+export { default as Logo } from './logo.svg';
+export { default as SearchIcon } from './search.svg';
+export { default as ArrowDownIcon } from './arrow-down.svg';
