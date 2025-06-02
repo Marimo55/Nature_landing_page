@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #f9f9f9;
+  color: '#11111';
+}
+
+button,
+a {
+  transition: all 0.2s ease;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.8;
+}
