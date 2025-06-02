@@ -11,7 +11,7 @@ export default function Link({
   href,
   ariaLabel = '',
 }: LinkProps) {
-  const linkClassName = `text-lg font-normal text-[#111111] ${className}`;
+  const linkClassName = `text-lg font-normal text-[#111111] hover:text-[#3A6150] ${className}`;
 
   return (
     <a className={linkClassName} href={href} aria-label={ariaLabel}>

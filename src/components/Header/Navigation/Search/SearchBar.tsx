@@ -4,8 +4,11 @@ import Input from '@/components/UI/Input/Input';
 
 export default function SearchBar() {
   return (
-    <div className='flex items-center justify-center w-[424px] relative'>
-      <Input variant='primary' className='rounded-e-none pe-[60px]'/>
+    <div className='flex items-center justify-center lg:max-w-[424px] w-full relative flex-shrink-1'>
+      <Input
+        variant='primary'
+        className='rounded-e-none pe-[60px] flex-shrink-1'
+      />
       <Button
         variant='primary-icon'
         icon={<SearchIcon />}

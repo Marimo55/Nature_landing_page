@@ -28,4 +28,6 @@ export default function Input({
   if (variant === 'secondary') {
     return <input type='text' placeholder={placeholder} />;
   }
+
+  return null;
 }
