@@ -1,11 +1,15 @@
-import Container from './components/Container/Container';
 import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
+import Main from './components/Main/Main';
 
 function App() {
   return (
-    <Container>
-      <Header></Header>
-    </Container>
+    <>
+      <Header />
+      <Main>
+        <Hero />
+      </Main>
+    </>
   );
 }
 
