@@ -1,4 +1,4 @@
-import Button from '../UI/Button/Button';
+import Button from '@/components/UI/Button/Button';
 
 export default function Hero() {
   const heroStyles = {
@@ -9,7 +9,7 @@ export default function Hero() {
       'max-w-[647px] flex flex-col align-center justify-center gap-[36px]',
     heroTitle: 'font-bold text-5xl text-[#3A6150]',
     heroSubTitle: 'text-2xl font-medium text-[#3A6150]',
-    heroDescription: 'text-sm max-w-[540px]',
+    heroDescription: 'text-sm max-w-[540px] leading-[1.5] font-normal',
     heroDescContainer: 'flex flex-col gap-[16px]',
     heroButton: 'max-w-[196px]',
     heroImage: 'w-full h-full max-w-[648px]',

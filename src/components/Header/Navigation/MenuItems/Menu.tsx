@@ -13,7 +13,7 @@ export default function Menu({ isNavOpen = false, setIsNavOpen }: MenuProps) {
     burgerMenu: 'space-y-2',
     burgerLine: 'block h-0.5 w-8 bg-[#3A6150]',
     mobileMenu: (isOpen: boolean) =>
-      `${isOpen ? 'flex' : 'hidden'} flex-col items-center justify-center absolute top-0 left-0 w-full h-screen bg-white z-50`,
+      `${isOpen ? 'flex' : 'hidden'} flex-col items-center justify-center fixed top-0 left-0 w-full h-screen bg-white z-50`,
     closeButton:
       'inline-block absolute top-6 right-16 cursor-pointer text-[#3A6150]',
     mobileLinks: 'flex flex-col items-center justify-center gap-8',
@@ -37,6 +37,7 @@ export default function Menu({ isNavOpen = false, setIsNavOpen }: MenuProps) {
             <button
               className={menuStyles.burgerMenu}
               onClick={() => setIsNavOpen(!isNavOpen)}
+              aria-label='Menu'
             >
               <span className={menuStyles.burgerLine}></span>
               <span className={menuStyles.burgerLine}></span>
