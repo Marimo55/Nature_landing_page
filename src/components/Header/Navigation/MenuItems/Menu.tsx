@@ -1,6 +1,6 @@
 import { ArrowDownIcon, CloseIcon, Logo } from '@/assets/Icons';
 
-import Link from './Link/Link';
+import Link from '../../../UI/Link/Link';
 
 type MenuProps = {
   isNavOpen?: boolean;
