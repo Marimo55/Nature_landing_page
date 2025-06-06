@@ -13,7 +13,7 @@ export default function Input({
     common:
       'w-full h-[48px] border-[2px] rounded-xs px-[15px] py-[11px] bg-white font-nomal text-lg',
     primary: `border-[#3A6150] placeholder:text-[#3A6150]/70 text-[#3A6150]/70`,
-    secondary: `border-[#000000]`,
+    secondary: `border-x-0 border-t-0 border-b-1`,
   };
 
   if (variant === 'primary') {
@@ -26,7 +26,13 @@ export default function Input({
     );
   }
   if (variant === 'secondary') {
-    return <input type='text' placeholder={placeholder} />;
+    return (
+      <input
+        className={`${inputStyles.common} ${inputStyles.secondary} ${className} `}
+        type='text'
+        placeholder={placeholder}
+      />
+    );
   }
 
   return null;
