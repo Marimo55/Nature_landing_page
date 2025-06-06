@@ -15,7 +15,7 @@ export default function Menu({ isNavOpen = false, setIsNavOpen }: MenuProps) {
     mobileMenu: (isOpen: boolean) =>
       `${isOpen ? 'flex' : 'hidden'} flex-col items-center justify-center fixed top-0 left-0 w-full h-screen bg-white z-50`,
     closeButton:
-      'inline-block absolute top-6 right-16 cursor-pointer text-[#3A6150]',
+      'inline-block absolute top-6 right-5 sm:right-10 md:right-16 cursor-pointer text-[#3A6150]',
     mobileLinks: 'flex flex-col items-center justify-center gap-8',
     desktopMenu: 'hidden lg:flex',
     desktopLinks: 'flex flex-row items-center justify-center flex-shrink-0',
