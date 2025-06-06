@@ -4,7 +4,7 @@ export default function Hero() {
   const heroStyles = {
     heroSection: 'bg-[#F9F9F9] w-full pt-[25px] pb-[60px]',
     heroContent:
-      'flex flex-col md:flex-row gap-[18px] justify-between mx-auto max-w-[1440px] px-16',
+      'flex flex-col md:flex-row gap-[18px] justify-between mx-auto max-w-[1440px] px-5 sm:px-10 md:px-16',
     heroTextContainer:
       'max-w-[647px] flex flex-col align-center justify-center gap-[36px]',
     heroTitle: 'font-bold text-5xl text-[#3A6150]',

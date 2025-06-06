@@ -13,8 +13,8 @@ export default function Card({
 }: CardProps) {
   const cardStyles = {
     cardCotainer:
-      'bg-[#3A6150] max-w-[400px] md:max-w-[647px] w-full flex align-center p-[24px] pb-[35px] gap-[18px] rounded-[4px] flex-wrap',
-    cardImage: 'max-w-[180px] max-h-[230px]',
+      'bg-[#3A6150] max-w-[400px] md:max-w-[647px] w-full flex align-center justify-center p-[24px] pb-[35px] gap-[18px] rounded-[4px] flex-wrap',
+    cardImage: 'max-w-[180px] max-h-[230px] ',
     cardTextContainer: 'flex flex-col max-w-[401px]',
     cardTitle: 'font-bold text-lg mb-[12px] text-white',
     cardDescription: 'text-sm text-white leading-[1.5]',

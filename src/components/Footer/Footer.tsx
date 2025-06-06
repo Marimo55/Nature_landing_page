@@ -7,7 +7,7 @@ import Link from '../UI/Link/Link';
 
 export default function Foooter() {
   const footerStyles = {
-    footerContainer: 'max-w-[1440px] px-16 mx-auto py-[24px]',
+    footerContainer: 'max-w-[1440px] px-5 sm:px-10 md:px-16 mx-auto py-[24px]',
     footerContent:
       'flex justify-center lg:justify-between flex-col lg:flex-row gap-[50px] lg:gap-[0px]',
     footerSubscribeContainer:
