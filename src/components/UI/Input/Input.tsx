@@ -1,13 +1,17 @@
 interface InputProps {
-  variant: 'primary' | 'secondary';
+  variant: 'primary' | 'secondary' | 'formInput';
   placeholder?: string;
   className?: string;
+  label?: string;
+  id?: string;
 }
 
 export default function Input({
   variant,
   placeholder = 'Search this site',
   className = '',
+  label,
+  id = 'lol',
 }: InputProps) {
   const inputStyles = {
     common:
@@ -30,8 +34,28 @@ export default function Input({
       <input
         className={`${inputStyles.common} ${inputStyles.secondary} ${className} `}
         type='text'
+        id={id}
         placeholder={placeholder}
       />
+    );
+  }
+
+  if (variant === 'formInput') {
+    return (
+      <>
+        {label && (
+          <div className='flex gap-[2px] text-sm'>
+            <span className='text-[#BA2B4B]'>*</span>
+            <label htmlFor={id}>{label}</label>
+          </div>
+        )}
+        <input
+          className={`${inputStyles.common} ${inputStyles.primary} ${className} `}
+          type='text'
+          id={id}
+          placeholder={placeholder}
+        />
+      </>
     );
   }
 
