@@ -43,7 +43,7 @@ export default function Hero() {
         <div>
           <img
             className={heroStyles.heroImage}
-            src='src/assets/Images/Hero.png'
+            src='/Images/Hero.png'
             alt='Hero image nature'
           />
         </div>

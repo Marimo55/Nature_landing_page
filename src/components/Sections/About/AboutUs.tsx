@@ -7,13 +7,13 @@ export default function AboutUs() {
         cardTitle='About us'
         cardDescription='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus. Senectus sed maecenas viverra tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus.'
         cardLink='/about-us-page'
-        cardImg='/src/assets/Images/About_us.png'
+        cardImg='/Images/About_us.png'
       />
       <Card
         cardTitle='About us'
         cardDescription='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus. Senectus sed maecenas viverra tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus.'
         cardLink='/about-us-page'
-        cardImg='/src/assets/Images/About_us.png'
+        cardImg='/Images/About_us.png'
       />
     </section>
   );
