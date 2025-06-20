@@ -16,6 +16,10 @@ a:hover {
   opacity: 0.8;
 }
 
+.backgroundImg {
+  background-image: url('/Images/Contact_us.png');
+}
+
 .custom-radio::after {
   content: '';
 }

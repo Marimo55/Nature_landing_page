@@ -4,14 +4,16 @@ interface InputProps {
   className?: string;
   label?: string;
   id?: string;
+  ariaLabel?: string;
 }
 
 export default function Input({
   variant,
-  placeholder = 'Search this site',
+  placeholder = '',
   className = '',
   label,
   id = 'lol',
+  ariaLabel = '',
 }: InputProps) {
   const inputStyles = {
     common:
@@ -26,6 +28,8 @@ export default function Input({
         type='text'
         placeholder={placeholder}
         className={`${inputStyles.common} ${inputStyles.primary} ${className}`}
+        aria-label={ariaLabel}
+        id={id}
       />
     );
   }
@@ -36,6 +40,7 @@ export default function Input({
         type='text'
         id={id}
         placeholder={placeholder}
+        aria-label={ariaLabel}
       />
     );
   }
@@ -54,6 +59,7 @@ export default function Input({
           type='text'
           id={id}
           placeholder={placeholder}
+          aria-label={ariaLabel}
         />
       </>
     );

@@ -8,6 +8,8 @@ export default function SearchBar() {
       <Input
         variant='primary'
         className='rounded-e-none pe-[60px] flex-shrink-1'
+        placeholder='Search this site'
+        ariaLabel='Search input'
       />
       <Button
         variant='primary-icon'

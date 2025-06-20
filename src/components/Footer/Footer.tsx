@@ -20,7 +20,7 @@ export default function Foooter() {
     footerNavigation: 'flex flex-col gap-[16px]',
     footerContacts: 'flex flex-col gap-[40px]',
     footerCopyRightContainer:
-      'flex flex-col md:flex-row align-center justify-center gap-[20px] sm:justify-between ',
+      'flex flex-col md:flex-row justify-center gap-[20px] sm:justify-between items-center',
     footerCopyRightText:
       'justify-self-center lg:flex-[1_1_60%] text-center lg:text-right text-sm',
     footerCopyRightLinks:
@@ -41,6 +41,7 @@ export default function Foooter() {
               variant='secondary'
               className={footerStyles.footerInput}
               placeholder='example@gmail.com'
+              ariaLabel='Subscribe input'
             />
             <Button
               variant='primary'
@@ -71,7 +72,11 @@ export default function Foooter() {
           <div className='flex flex-col gap-[8px]'>
             <h4 className='text-lg'>Contacts</h4>
             <p>
-              <Link className='text-black/60' href='tel:+380630720121'>
+              <Link
+                className='text-black/60'
+                href='tel:+380630720121'
+                ariaLabel='Phone'
+              >
                 +38 063 072 0121
               </Link>
             </p>
@@ -79,6 +84,7 @@ export default function Foooter() {
               <Link
                 className='text-black/60'
                 href='mailto:plantme.store@gmail.com'
+                ariaLabel='Email'
               >
                 plantme.store@gmail.com
               </Link>

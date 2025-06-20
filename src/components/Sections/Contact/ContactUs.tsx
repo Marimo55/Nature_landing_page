@@ -1,4 +1,4 @@
-import { FacebookIcon } from '@/assets/Icons';
+import { ArrowDownIcon, FacebookIcon } from '@/assets/Icons';
 import Button from '@/components/UI/Button/Button';
 import Checkbox from '@/components/UI/Checkbox/Checkbox';
 import Input from '@/components/UI/Input/Input';
@@ -10,8 +10,7 @@ export default function ContactUs() {
     contactContainer: 'bg-[#71837B] w-full pt-[80px] pb-[120px]',
     contactContent:
       'contactContent flex flex-col lg:flex-row mx-auto max-w-[1440px] px-5 sm:px-10 md:px-16',
-    contactLeft:
-      'leftContainer bg-[url(/src/assets/Images/Contact_us.png)] bg-cover lg:max-w-[425px] p-[42px] pr-[48px] flex flex-col gap-[56px] rounded-b-none lg:rounded relative z-10',
+    contactLeft: `leftContainer bg-[url(/Images/Contact_us.png)] bg-cover lg:max-w-[425px] p-[42px] pr-[48px] flex flex-col gap-[56px] rounded-b-none lg:rounded relative z-10`,
     contactLinkContainer: 'flex flex-col gap-[19px]',
     contactLink: 'flex gap-[24px] text-sm align-center items-center',
     contactSocialIcons: 'flex gap-[36px] mt-auto',
@@ -36,13 +35,21 @@ export default function ContactUs() {
             <ul className={contactStyles.contactLinkContainer}>
               <li className={contactStyles.contactLink}>
                 <FacebookIcon />
-                <Link href='tel:+380931532456' className='text-sm'>
+                <Link
+                  href='tel:+380931532456'
+                  className='text-sm'
+                  ariaLabel='Phone'
+                >
                   +380 93 15 32 456
                 </Link>
               </li>
               <li className={contactStyles.contactLink}>
                 <FacebookIcon />
-                <Link href='mailto:example@gmail.com' className='text-sm'>
+                <Link
+                  href='mailto:example@gmail.com'
+                  className='text-sm'
+                  ariaLabel='Email'
+                >
                   example@gmail.com
                 </Link>
               </li>
@@ -54,13 +61,13 @@ export default function ContactUs() {
           </div>
 
           <div className={contactStyles.contactSocialIcons}>
-            <Link href='/link1'>
+            <Link href='/link1' ariaLabel='Link to site 1'>
               <FacebookIcon />
             </Link>
-            <Link href='/link2'>
+            <Link href='/link2' ariaLabel='Link to site 2'>
               <FacebookIcon />
             </Link>
-            <Link href='/link3'>
+            <Link href='/link3' ariaLabel='Link to site 3'>
               <FacebookIcon />
             </Link>
           </div>
@@ -69,20 +76,47 @@ export default function ContactUs() {
         <div className={contactStyles.contactRight}>
           <div className={contactStyles.inputContainers}>
             <div className='max-w-[416px] 2xl:w-full grow'>
-              <Input variant='formInput' label='First name' id='firstName' />
-            </div>
-            <div className='max-w-[416px] 2xl:w-full grow shrink'>
-              <Input variant='formInput' label='Last name' id='lastName' />
-            </div>
-            <div className='max-w-[416px] 2xl:w-full grow shrink'>
-              <Input variant='formInput' label='Email' id='email' />
+              <Input
+                variant='formInput'
+                label='First name'
+                id='firstName'
+                placeholder='Jon'
+              />
             </div>
             <div className='max-w-[416px] 2xl:w-full grow shrink'>
               <Input
                 variant='formInput'
+                label='Last name'
+                id='lastName'
+                placeholder='Doe'
+              />
+            </div>
+            <div className='max-w-[416px] 2xl:w-full grow shrink'>
+              <Input
+                variant='formInput'
+                label='Email'
+                id='email'
+                placeholder='example@mail.com'
+              />
+            </div>
+            <div className='max-w-[416px] 2xl:w-full grow shrink relative'>
+              <Input
+                variant='formInput'
                 label='Phone number'
                 id='phoneNumber'
+                placeholder='00 000 00 00'
+                className='pl-[100px] '
               />
+              <div className='flex absolute top-[50%] left-[15px] translate-y-[-10%]'>
+                <Link
+                  href='#'
+                  className='flex items-center gap-1'
+                  ariaLabel='Select number format'
+                >
+                  +380 <ArrowDownIcon />
+                </Link>
+                <span className='text-xl text-neutral-900/60'>|</span>
+              </div>
             </div>
           </div>
 
@@ -99,8 +133,7 @@ export default function ContactUs() {
               name='specialisation'
             />
             <RadioBtn id='radio4' label='QA Engineer' name='specialisation' />
-            <RadioBtn id='radio4' label='Other' name='specialisation' />
-            {/* <Checkbox id='check1' label='option1' name='checkboxlol' /> */}
+            <RadioBtn id='radio5' label='Other' name='specialisation' />
           </div>
           <div className='flex flex-col gap-[8px] w-full'>
             <label className='text-sm' htmlFor='textAreaMsg'>
