@@ -4,7 +4,7 @@ export default function Hero() {
   const heroStyles = {
     heroSection: 'bg-[#F9F9F9] w-full pt-[25px] pb-[60px]',
     heroContent:
-      'flex flex-col md:flex-row gap-[18px] justify-between mx-auto max-w-[1440px] px-5 sm:px-10 md:px-16',
+      'flex flex-col md:flex-row gap-[18px] gap-y-[30px] justify-between mx-auto max-w-[1440px] px-5 sm:px-10 md:px-16',
     heroTextContainer:
       'max-w-[647px] flex flex-col align-center justify-center gap-[36px]',
     heroTitle: 'font-bold text-5xl text-[#3A6150]',
@@ -12,7 +12,7 @@ export default function Hero() {
     heroDescription: 'text-sm max-w-[540px] leading-[1.5] font-normal',
     heroDescContainer: 'flex flex-col gap-[16px]',
     heroButton: 'max-w-[196px]',
-    heroImage: 'w-full h-full max-w-[648px]',
+    heroImage: 'w-full h-full max-w-[360px] lg:max-w-[648px] bg-cover',
   };
 
   return (
@@ -40,11 +40,18 @@ export default function Hero() {
           </div>
         </div>
 
-        <div>
+        <div className='flex justify-center'>
           <img
             className={heroStyles.heroImage}
-            src='/Images/Hero.png'
+            src='/Images/Hero.webp'
+            srcSet='
+              /Images/Hero_mobile.webp 480w,
+              /Images/Hero_tablet.webp 768w,
+              /Images/Hero.webp 1200w
+            '
+            sizes='(max-width: 640px) 480px, (max-width: 1024px) 768px, 1200px'
             alt='Hero image nature'
+            loading='lazy'
           />
         </div>
       </div>

@@ -1,5 +1,5 @@
 type ButtonProps = {
-  variant: 'primary' | 'primary-icon' | 'primary-icon-text';
+  variant: 'primary' | 'primary-icon';
   ariaLabel?: string;
   className?: string;
   children?: React.ReactNode;

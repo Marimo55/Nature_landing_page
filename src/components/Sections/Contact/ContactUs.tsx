@@ -10,7 +10,7 @@ export default function ContactUs() {
     contactContainer: 'bg-[#71837B] w-full pt-[80px] pb-[120px]',
     contactContent:
       'contactContent flex flex-col lg:flex-row mx-auto max-w-[1440px] px-5 sm:px-10 md:px-16',
-    contactLeft: `leftContainer bg-[url(/Images/Contact_us.png)] bg-cover lg:max-w-[425px] p-[42px] pr-[48px] flex flex-col gap-[56px] rounded-b-none lg:rounded relative z-10`,
+    contactLeft: `leftContainer bg-[url(/Images/Contact_us.webp)] bg-cover lg:max-w-[425px] p-[42px] pr-[48px] flex flex-col gap-[56px] rounded-b-none lg:rounded relative z-10`,
     contactLinkContainer: 'flex flex-col gap-[19px]',
     contactLink: 'flex gap-[24px] text-sm align-center items-center',
     contactSocialIcons: 'flex gap-[36px] mt-auto',
